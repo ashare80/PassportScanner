@@ -9,7 +9,6 @@ import Foundation
 import UIKit
 import TesseractOCR
 import GPUImage
-import UIImage_Resize
 import PureLayout
 
 protocol RVTTextScannerViewDelegate: class {

@@ -85,6 +85,5 @@ s.requires_arc = true
 
 s.dependency "TesseractOCRiOS"
 s.dependency "GPUImage"
-s.dependency "UIImage-Resize"
 
 end
