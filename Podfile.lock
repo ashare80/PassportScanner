@@ -1,0 +1,16 @@
+PODS:
+  - GPUImage (0.1.7)
+  - PureLayout (3.0.1)
+  - TesseractOCRiOS (4.0.0)
+
+DEPENDENCIES:
+  - GPUImage
+  - PureLayout
+  - TesseractOCRiOS
+
+SPEC CHECKSUMS:
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  PureLayout: f35f5384c9c4e4479df041dbe33ad7577b71ddfb
+  TesseractOCRiOS: 90638afbe43d082433f2e76b384c7901d23956df
+
+COCOAPODS: 0.39.0

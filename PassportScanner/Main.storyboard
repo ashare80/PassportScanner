@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PassportScanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSq-F7-poS" userLabel="SCAN">
+                                <rect key="frame" x="219.5" y="274.5" width="161" height="51"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="161" id="Dt0-HU-cho"/>
+                                    <constraint firstAttribute="height" constant="51" id="tnG-bM-Rf8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="45"/>
+                                <state key="normal" title=" SCAN ">
+                                    <color key="titleColor" red="0.37391048669999999" green="0.75385105610000003" blue="0.53821831939999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startScan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OLI-qW-o96"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BSq-F7-poS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QZl-uc-OdO"/>
+                            <constraint firstItem="BSq-F7-poS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dno-7u-zRD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-508" y="-1127"/>
+        </scene>
+        <!--My Scan View Controller-->
+        <scene sceneID="LPJ-C2-hG9">
+            <objects>
+                <viewController storyboardIdentifier="PassportScanner" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qHB-Os-1wr" customClass="MyScanViewController" customModule="PassportScanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xPt-VS-8OA"/>
+                        <viewControllerLayoutGuide type="bottom" id="LEH-tj-rlo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bcf-pp-v92" userLabel="View">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="buY-rE-70k" userLabel="filterView" customClass="RVTTextScannerView" customModule="PassportScanner" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="408"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LRm-oQ-7DP">
+                                <rect key="frame" x="0.0" y="408" width="320" height="160"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zyL-f1-dwV">
+                                        <rect key="frame" x="16" y="52.5" width="288" height="91.5"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Awaiting Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="Rkp-qS-SLa">
+                                        <rect key="frame" x="16" y="16" width="288" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="zyL-f1-dwV" firstAttribute="leading" secondItem="LRm-oQ-7DP" secondAttribute="leading" constant="16" id="Dyn-fS-RUG"/>
+                                    <constraint firstAttribute="trailing" secondItem="zyL-f1-dwV" secondAttribute="trailing" constant="16" id="LLF-BC-QHA"/>
+                                    <constraint firstItem="zyL-f1-dwV" firstAttribute="top" secondItem="Rkp-qS-SLa" secondAttribute="bottom" constant="16" id="eUQ-Lc-dho"/>
+                                    <constraint firstItem="Rkp-qS-SLa" firstAttribute="leading" secondItem="LRm-oQ-7DP" secondAttribute="leading" constant="16" id="p3w-dG-gMk"/>
+                                    <constraint firstAttribute="height" constant="160" id="qGl-V1-12k"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rkp-qS-SLa" secondAttribute="trailing" constant="16" id="vfk-Af-v8d"/>
+                                    <constraint firstItem="Rkp-qS-SLa" firstAttribute="top" secondItem="LRm-oQ-7DP" secondAttribute="top" constant="16" id="vj5-vM-vVv"/>
+                                    <constraint firstAttribute="bottom" secondItem="zyL-f1-dwV" secondAttribute="bottom" constant="16" id="xmn-1D-ars"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LRm-oQ-7DP" firstAttribute="top" secondItem="buY-rE-70k" secondAttribute="bottom" id="8F5-Nr-xUI"/>
+                            <constraint firstItem="buY-rE-70k" firstAttribute="leading" secondItem="bcf-pp-v92" secondAttribute="leadingMargin" id="FM0-TO-uEk"/>
+                            <constraint firstItem="buY-rE-70k" firstAttribute="top" secondItem="xPt-VS-8OA" secondAttribute="bottom" id="IF3-YD-lka"/>
+                            <constraint firstItem="LEH-tj-rlo" firstAttribute="top" secondItem="buY-rE-70k" secondAttribute="bottom" id="IT5-gc-vyN"/>
+                            <constraint firstItem="LEH-tj-rlo" firstAttribute="top" secondItem="LRm-oQ-7DP" secondAttribute="bottom" id="IuK-YD-uYr"/>
+                            <constraint firstAttribute="trailing" secondItem="buY-rE-70k" secondAttribute="trailing" id="g2Z-Yg-Zbd"/>
+                            <constraint firstItem="buY-rE-70k" firstAttribute="top" secondItem="xPt-VS-8OA" secondAttribute="bottom" id="iCb-GN-uNU"/>
+                            <constraint firstAttribute="trailing" secondItem="LRm-oQ-7DP" secondAttribute="trailing" id="l5W-R8-WPe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="buY-rE-70k" secondAttribute="trailing" id="pWw-aS-oTb"/>
+                            <constraint firstItem="LRm-oQ-7DP" firstAttribute="leading" secondItem="bcf-pp-v92" secondAttribute="leading" id="tqE-QW-x6k"/>
+                            <constraint firstItem="buY-rE-70k" firstAttribute="leading" secondItem="bcf-pp-v92" secondAttribute="leading" id="yMA-FE-dlm"/>
+                            <constraint firstItem="buY-rE-70k" firstAttribute="top" secondItem="bcf-pp-v92" secondAttribute="top" id="zxC-RM-9U6"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="FM0-TO-uEk"/>
+                                <exclude reference="IF3-YD-lka"/>
+                                <exclude reference="iCb-GN-uNU"/>
+                                <exclude reference="pWw-aS-oTb"/>
+                                <exclude reference="IT5-gc-vyN"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="imageView" destination="zyL-f1-dwV" id="cvc-lR-5rL"/>
+                        <outlet property="label" destination="Rkp-qS-SLa" id="3LW-k5-tOe"/>
+                        <outlet property="textScannerView" destination="buY-rE-70k" id="vDm-S1-dCp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="77q-Md-56S" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="o2m-Ix-vVI">
+                    <connections>
+                        <action selector="didPan:" destination="qHB-Os-1wr" id="W9p-rk-Cr3"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="276" y="-1121"/>
+        </scene>
+    </scenes>
+</document>
