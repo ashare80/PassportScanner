@@ -59,7 +59,7 @@ public class RVTTextScannerView: UIView, G8TesseractDelegate {
     var timer: NSTimer?
     
     /// For capturing the video and passing it on to the filters.
-    private let videoCamera: GPUImageVideoCamera
+    private let videoCamera: GPUImageVideoCamera = GPUImageVideoCamera(sessionPreset: AVCaptureSessionPreset1920x1080, cameraPosition: .Back)
     
     let ocrOperationQueue = NSOperationQueue()
     
@@ -82,14 +82,24 @@ public class RVTTextScannerView: UIView, G8TesseractDelegate {
     var tesseract:G8Tesseract = G8Tesseract(language: "eng")
     
     public required init?(coder aDecoder: NSCoder) {
-        videoCamera = GPUImageVideoCamera(sessionPreset: AVCaptureSessionPreset1920x1080, cameraPosition: .Back)
-        videoCamera.outputImageOrientation = .Portrait;
         super.init(coder: aDecoder)
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+     
+        self.setup()
     }
     
     public override func awakeFromNib() {
         super.awakeFromNib()
         
+        self.setup()
+    }
+    
+    func setup() {
+        
+        videoCamera.outputImageOrientation = .Portrait;
         self.gpuImageView = GPUImageView(frame: self.frame)
         self.addSubview(gpuImageView)
         self.gpuImageView.autoCenterInSuperview()
@@ -129,6 +139,9 @@ public class RVTTextScannerView: UIView, G8TesseractDelegate {
     public func startScan() {
         
         self.videoCamera.startCameraCapture()
+        
+        self.timer?.invalidate()
+        self.timer = nil;
         self.timer = NSTimer.scheduledTimerWithTimeInterval(0.05, target: self, selector: Selector("scan"), userInfo: nil, repeats: false)
     }
     
@@ -147,18 +160,19 @@ public class RVTTextScannerView: UIView, G8TesseractDelegate {
      Perform a scan
      */
     public func scan() {
-        // Get a snapshot from this filter, should be from the next runloop
-        self.timer?.invalidate()
-        self.timer = nil
-        
-        let startTime = NSDate()
-        
-        let currentFilterConfiguration = self.contrast
-        currentFilterConfiguration.useNextFrameForImageCapture()
         
         NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
             
+            self.timer?.invalidate()
+            self.timer = nil
+            
+            let startTime = NSDate()
+            
+            let currentFilterConfiguration = self.contrast
+            currentFilterConfiguration.useNextFrameForImageCapture()
+            currentFilterConfiguration.framebufferForOutput()?.disableReferenceCounting()
             let snapshot = currentFilterConfiguration.imageFromCurrentFramebuffer()
+            
             if snapshot == nil {
                 self.startScan()
                 return
@@ -242,7 +256,7 @@ public class RVTTextScannerView: UIView, G8TesseractDelegate {
                         hint = "Align text to top left corner"
                     }
                     else {
-                        if (abs(startTime.timeIntervalSinceNow) > 1.0 && self?.cropView?.frame.size.height > 100) {
+                        if (abs(startTime.timeIntervalSinceNow) > 1.5 && self?.cropView?.frame.size.height > 100) {
                             hint = "Hint: Resize the scanner to fit only the required text for faster results"
                         }
                     }
@@ -260,9 +274,8 @@ public class RVTTextScannerView: UIView, G8TesseractDelegate {
                         weakSelf.delegate?.scannerDidFindCommontextResult(weakSelf, textResult: existingComponent!, image: image)
                     }
                     
-                    self!.startScan()
+                    self?.startScan()
                 })
-                
                 })
         })
     }
