@@ -10,7 +10,6 @@
 		7F132F341B9ED2C5001A542A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F132F331B9ED2C5001A542A /* AppDelegate.swift */; };
 		7F132F3B1B9ED2C5001A542A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F132F3A1B9ED2C5001A542A /* Images.xcassets */; };
 		7F132F4A1B9ED2C5001A542A /* PassportScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F132F491B9ED2C5001A542A /* PassportScannerTests.swift */; };
-		7FDBE3621B9EE5B1004E7945 /* overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FDBE3611B9EE5B1004E7945 /* overlay.png */; };
 		7FDBE3641B9EE777004E7945 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 7FDBE3631B9EE777004E7945 /* tessdata */; };
 		7FDBE36A1B9F0334004E7945 /* PassportScanner.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 7FDBE3691B9F0334004E7945 /* PassportScanner.podspec */; };
 		9761CA4BF8108044A47E681B /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B541379838EC928F1B3B6C /* Pods.framework */; };
@@ -42,7 +41,6 @@
 		7F132F491B9ED2C5001A542A /* PassportScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassportScannerTests.swift; sourceTree = "<group>"; };
 		7F159DF61BA2F8A600247CB1 /* circle.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = circle.yml; sourceTree = "<group>"; };
 		7F1B4CCC1B9EDC5E0090F05E /* PassportScanner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PassportScanner-Bridging-Header.h"; sourceTree = "<group>"; };
-		7FDBE3611B9EE5B1004E7945 /* overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overlay.png; sourceTree = "<group>"; };
 		7FDBE3631B9EE777004E7945 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		7FDBE3651B9F02D2004E7945 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7FDBE3681B9F0328004E7945 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -113,7 +111,6 @@
 				7F132F331B9ED2C5001A542A /* AppDelegate.swift */,
 				C57D424B1BDAAF4600B5E1EC /* ViewController.swift */,
 				C57D42451BDAAEEF00B5E1EC /* MyScanViewController.swift */,
-				7FDBE3611B9EE5B1004E7945 /* overlay.png */,
 				7F132F3A1B9ED2C5001A542A /* Images.xcassets */,
 				C57D42471BDAAF0A00B5E1EC /* Main.storyboard */,
 				C57D42491BDAAF1800B5E1EC /* LaunchScreen.xib */,
@@ -257,7 +254,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FDBE3621B9EE5B1004E7945 /* overlay.png in Resources */,
 				7FDBE36A1B9F0334004E7945 /* PassportScanner.podspec in Resources */,
 				7FDBE3641B9EE777004E7945 /* tessdata in Resources */,
 				C57D42481BDAAF0A00B5E1EC /* Main.storyboard in Resources */,

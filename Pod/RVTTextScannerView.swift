@@ -176,7 +176,6 @@ public class RVTTextScannerView: UIView, G8TesseractDelegate {
                 var component: RVTTextResult?
                 var existingComponent: RVTTextResult?
                 
-                //                autoreleasepool {
                 // Crop scan area
                 
                 var cropRect:CGRect! = weakSelf.cropRect
