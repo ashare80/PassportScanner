@@ -25,6 +25,9 @@ class MyScanViewController: UIViewController, RVTTextScannerViewDelegate {
         self.textScannerView.startScan()
     }
     
+    @IBAction func dismiss(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     
      override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
         return UIInterfaceOrientationMask.Portrait

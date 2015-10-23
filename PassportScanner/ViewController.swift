@@ -21,7 +21,8 @@ class ViewController: UIViewController {
     @IBAction func startScan(sender: AnyObject) {
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let scanVC: MyScanViewController = storyboard.instantiateViewControllerWithIdentifier("PassportScanner") as! MyScanViewController
-        self.presentViewController(scanVC, animated: true, completion: nil)
+        let navigationController = UINavigationController(rootViewController: scanVC)
+        self.presentViewController(navigationController, animated: true, completion: nil)
     }
 }
 
