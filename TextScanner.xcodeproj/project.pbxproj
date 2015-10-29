@@ -88,7 +88,7 @@
 				7F0601A11BA029DE00091999 /* ezgif.gif */,
 				7FDBE3631B9EE777004E7945 /* tessdata */,
 				7F1B4CC71B9ED5810090F05E /* Pod */,
-				7F132F301B9ED2C5001A542A /* PassportScanner */,
+				7F132F301B9ED2C5001A542A /* TextScanner */,
 				7F132F461B9ED2C5001A542A /* PassportScannerTests */,
 				7F132F2F1B9ED2C5001A542A /* Products */,
 				9C32A16DC6E9DE7A5C59D23F /* Pods */,
@@ -105,7 +105,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7F132F301B9ED2C5001A542A /* PassportScanner */ = {
+		7F132F301B9ED2C5001A542A /* TextScanner */ = {
 			isa = PBXGroup;
 			children = (
 				7F132F331B9ED2C5001A542A /* AppDelegate.swift */,
@@ -116,7 +116,6 @@
 				C57D42491BDAAF1800B5E1EC /* LaunchScreen.xib */,
 				7F132F311B9ED2C5001A542A /* Supporting Files */,
 			);
-			name = PassportScanner;
 			path = TextScanner;
 			sourceTree = "<group>";
 		};

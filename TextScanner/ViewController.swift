@@ -20,7 +20,7 @@ class ViewController: UIViewController {
 
     @IBAction func startScan(sender: AnyObject) {
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let scanVC: MyScanViewController = storyboard.instantiateViewControllerWithIdentifier("TextScanner") as! MyScanViewController
+        let scanVC: MyScanViewController = storyboard.instantiateViewControllerWithIdentifier("MyScanViewController") as! MyScanViewController
         let navigationController = UINavigationController(rootViewController: scanVC)
         self.presentViewController(navigationController, animated: true, completion: nil)
     }

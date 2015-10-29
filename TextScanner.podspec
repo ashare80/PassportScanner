@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
 #  summary should be tweet-length, and the description more in depth.
 #
 
-s.name         = "RVTTextScannerView"
+s.name         = "TextScanner"
 s.version      = "1.0.0"
 s.summary      = "Real time text scanner"
 
@@ -85,5 +85,6 @@ s.requires_arc = true
 
 s.dependency "TesseractOCRiOS"
 s.dependency "GPUImage"
+s.dependency "PureLayout"
 
 end
