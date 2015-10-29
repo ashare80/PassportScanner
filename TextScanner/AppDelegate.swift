@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  PassportScanner
+//  TextScanner
 //
 //  Created by Edwin Vermeer on 9/8/15.
 //  Copyright (c) 2015 Mirabeau. All rights reserved.

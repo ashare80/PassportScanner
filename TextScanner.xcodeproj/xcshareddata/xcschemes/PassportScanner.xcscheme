@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7F132F2D1B9ED2C5001A542A"
-               BuildableName = "PassportScanner.app"
-               BlueprintName = "PassportScanner"
-               ReferencedContainer = "container:PassportScanner.xcodeproj">
+               BuildableName = "TextScanner.app"
+               BlueprintName = "TextScanner"
+               ReferencedContainer = "container:TextScanner.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7F132F421B9ED2C5001A542A"
-               BuildableName = "PassportScannerTests.xctest"
-               BlueprintName = "PassportScannerTests"
-               ReferencedContainer = "container:PassportScanner.xcodeproj">
+               BuildableName = "TextScanner.xctest"
+               BlueprintName = "TextScannerTests"
+               ReferencedContainer = "container:TextScanner.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7F132F421B9ED2C5001A542A"
-               BuildableName = "PassportScannerTests.xctest"
-               BlueprintName = "PassportScannerTests"
-               ReferencedContainer = "container:PassportScanner.xcodeproj">
+               BuildableName = "TextScanner.xctest"
+               BlueprintName = "TextScannerTests"
+               ReferencedContainer = "container:TextScanner.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7F132F2D1B9ED2C5001A542A"
-            BuildableName = "PassportScanner.app"
-            BlueprintName = "PassportScanner"
-            ReferencedContainer = "container:PassportScanner.xcodeproj">
+            BuildableName = "TextScanner.app"
+            BlueprintName = "TextScanner"
+            ReferencedContainer = "container:TextScanner.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7F132F2D1B9ED2C5001A542A"
-            BuildableName = "PassportScanner.app"
-            BlueprintName = "PassportScanner"
-            ReferencedContainer = "container:PassportScanner.xcodeproj">
+            BuildableName = "TextScanner.app"
+            BlueprintName = "TextScanner"
+            ReferencedContainer = "container:TextScanner.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -99,9 +99,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7F132F2D1B9ED2C5001A542A"
-            BuildableName = "PassportScanner.app"
-            BlueprintName = "PassportScanner"
-            ReferencedContainer = "container:PassportScanner.xcodeproj">
+            BuildableName = "TextScanner.app"
+            BlueprintName = "TextScanner"
+            ReferencedContainer = "container:TextScanner.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

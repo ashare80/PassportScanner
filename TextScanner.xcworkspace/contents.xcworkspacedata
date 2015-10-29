@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:PassportScanner.xcodeproj">
+      location = "group:/Users/AdamShare/Desktop/PassportScanner-master/TextScanner.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
