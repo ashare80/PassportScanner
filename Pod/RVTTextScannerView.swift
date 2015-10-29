@@ -36,6 +36,22 @@ extension RVTTextScannerViewDelegate {
 
 public class RVTTextScannerView: UIView, G8TesseractDelegate {
     
+    public class func scanImage(var image: UIImage) -> RVTTextResult? {
+        
+        let tesseract:G8Tesseract = G8Tesseract(language: "eng")
+        image = image.g8_blackAndWhite()
+        tesseract.image = image
+        tesseract.recognize()
+        let result = tesseract.recognizedText
+        G8Tesseract.clearCache()
+        
+        if let text = result {
+            return RVTTextResult(withText: text)
+        }
+        
+        return nil
+    }
+    
     var showCropView: Bool! = false {
         didSet {
             self.cropView?.removeFromSuperview()
@@ -324,7 +340,7 @@ public class RVTTextScannerView: UIView, G8TesseractDelegate {
 }
 
 
-class RVTTextResult {
+public class RVTTextResult {
     
     init (withText text: String) {
         self.text = text

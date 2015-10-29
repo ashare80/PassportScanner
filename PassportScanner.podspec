@@ -7,14 +7,14 @@ Pod::Spec.new do |s|
 #  summary should be tweet-length, and the description more in depth.
 #
 
-s.name         = "PassportScanner"
-s.version      = "1.0.2"
-s.summary      = "Scan the MRZ code on a passport"
+s.name         = "RVTTextScannerView"
+s.version      = "1.0.0"
+s.summary      = "Real time text scanner"
 
-s.description  = "Scan the MRZ code on a passport and it's data'"
+s.description  = "Quick scan with Tesseract OCR in real time based off of PassportScanner by evermeer"
 
-s.homepage     = "https://github.com/evermeer/PassportScanner"
-s.screenshots  = ["https://github.com/evermeer/PassportScanner/blob/master/Screenshot1.jpg?raw=true", "https://github.com/evermeer/PassportScanner/blob/master/Screenshot2.jpg?raw=true"]
+#s.homepage     = "https://github.com/ashare80/RVTTextScannerView"
+#s.screenshots  = [""]
 
 
 # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -37,8 +37,8 @@ s.license      = { :type => "BSD-3", :file => "LICENSE" }
 #  profile URL.
 #
 
-s.author    = "evermeer"
-s.social_media_url   = "http://twitter.com/evermeer"
+s.author    = "Adam Share"
+#s.social_media_url   = ""
 
 # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 #
@@ -54,7 +54,7 @@ s.platform     = :ios, "8.0"
 #  Supports git, hg, bzr, svn and HTTP.
 #
 
-s.source       = { :git => "https://github.com/evermeer/PassportScanner.git", :tag => s.version.to_s }
+s.source       = { :git => "https://github.com/ashare80/RVTTextScannerView.git", :tag => s.version.to_s }
 
 # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 #
