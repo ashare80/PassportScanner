@@ -31,7 +31,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7F0601A11BA029DE00091999 /* ezgif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ezgif.gif; sourceTree = "<group>"; };
 		7F132F2E1B9ED2C5001A542A /* TextScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F132F321B9ED2C5001A542A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F132F331B9ED2C5001A542A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,14 +38,12 @@
 		7F132F431B9ED2C5001A542A /* TextScanner.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextScanner.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F132F481B9ED2C5001A542A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F132F491B9ED2C5001A542A /* TextScanner Tests */ = {isa = PBXFileReference; lastKnownFileType = text; path = "TextScanner Tests"; sourceTree = "<group>"; };
-		7F159DF61BA2F8A600247CB1 /* circle.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = circle.yml; sourceTree = "<group>"; };
 		7F1B4CCC1B9EDC5E0090F05E /* TextScanner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TextScanner-Bridging-Header.h"; sourceTree = "<group>"; };
 		7FDBE3631B9EE777004E7945 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		7FDBE3651B9F02D2004E7945 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7FDBE3681B9F0328004E7945 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		7FDBE3691B9F0334004E7945 /* TextScanner.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TextScanner.podspec; sourceTree = "<group>"; };
 		7FFA7CD91BAAE01A00B3A0B8 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		7FFA7CDB1BAC13DC00B3A0B8 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		B1B541379838EC928F1B3B6C /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C57D42431BDAAEA800B5E1EC /* RVTTextScannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RVTTextScannerView.swift; sourceTree = "<group>"; };
 		C57D42451BDAAEEF00B5E1EC /* MyScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyScanViewController.swift; sourceTree = "<group>"; };
@@ -80,12 +77,9 @@
 			isa = PBXGroup;
 			children = (
 				7FFA7CD91BAAE01A00B3A0B8 /* .gitignore */,
-				7FFA7CDB1BAC13DC00B3A0B8 /* .travis.yml */,
-				7F159DF61BA2F8A600247CB1 /* circle.yml */,
 				7FDBE3691B9F0334004E7945 /* TextScanner.podspec */,
 				7FDBE3651B9F02D2004E7945 /* README.md */,
 				7FDBE3681B9F0328004E7945 /* LICENSE */,
-				7F0601A11BA029DE00091999 /* ezgif.gif */,
 				7FDBE3631B9EE777004E7945 /* tessdata */,
 				7F1B4CC71B9ED5810090F05E /* Pod */,
 				7F132F301B9ED2C5001A542A /* TextScanner */,
