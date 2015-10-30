@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
 #
 
 s.name         = "TextScanner"
-s.version      = "1.1.0"
+s.version      = "1.1.1"
 s.summary      = "Real time text scanner"
 
 s.description  = "Quick scan with Tesseract OCR in real time based off of PassportScanner by evermeer"

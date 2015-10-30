@@ -11,7 +11,7 @@ import TesseractOCR
 import GPUImage
 import PureLayout
 
-protocol RVTTextScannerViewDelegate: class {
+public protocol RVTTextScannerViewDelegate: class {
     
     func scannerDidRecognizeText(scanner: RVTTextScannerView, textResult: RVTTextResult, image: UIImage?)
     func scannerDidFindCommontextResult(scanner: RVTTextScannerView, textResult: RVTTextResult, image: UIImage?)
@@ -52,7 +52,7 @@ public class RVTTextScannerView: UIView, G8TesseractDelegate {
         return nil
     }
     
-    var showCropView: Bool! = false {
+    public var showCropView: Bool! = false {
         didSet {
             self.cropView?.removeFromSuperview()
             if self.showCropView == true {
@@ -65,11 +65,13 @@ public class RVTTextScannerView: UIView, G8TesseractDelegate {
         }
     }
     
-    var allowsHorizontalScanning = false
-    var cropView: RVTScanCropView?
+    public var allowsHorizontalScanning = false
+    public var cropView: RVTScanCropView?
+    
+    
     var gpuImageView: GPUImageView!
     
-    weak var delegate: RVTTextScannerViewDelegate?
+    public weak var delegate: RVTTextScannerViewDelegate?
     
     var timer: NSTimer?
     
@@ -91,10 +93,10 @@ public class RVTTextScannerView: UIView, G8TesseractDelegate {
         }
     }
     
-    var matchThreshold = 3
+    public var matchThreshold = 3
     var foundTextResults: [String: RVTTextResult] = [:]
     
-    var tesseract:G8Tesseract = G8Tesseract(language: "eng")
+    public var tesseract:G8Tesseract = G8Tesseract(language: "eng")
     
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -380,7 +382,7 @@ public class RVTTextResult {
 
 
 
-class RVTScanCropView: UIView {
+public class RVTScanCropView: UIView {
     
     var showProgressView: Bool! = true {
         didSet {
@@ -410,14 +412,14 @@ class RVTScanCropView: UIView {
         }
     }
     
-    var edgeColor: UIColor! = UIColor.lightGrayColor() {
+    public var edgeColor: UIColor! = UIColor.lightGrayColor() {
         didSet {
             self.cornerShapeLayer.strokeColor = self.edgeColor.CGColor;
             self.resizedView.layer.borderColor = self.edgeColor.colorWithAlphaComponent(0.3).CGColor
         }
     }
     
-    var progressColor: UIColor! = UIColor.lightGrayColor() {
+    public var progressColor: UIColor! = UIColor.lightGrayColor() {
         didSet {
             self.progressView.backgroundColor = self.progressColor.colorWithAlphaComponent(0.5)
         }
@@ -456,7 +458,7 @@ class RVTScanCropView: UIView {
         self.setupViews()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
         self.setupViews()
@@ -573,7 +575,7 @@ class RVTScanCropView: UIView {
         return self.superview as? RVTTextScannerView
     }
     
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         super.layoutSubviews()
         
         if let scanView = self.textScanView {
