@@ -4,3 +4,7 @@ use_frameworks!
 pod 'TesseractOCRiOS' #, :git => 'https://github.com/gali8/Tesseract-OCR-iOS.git'
 pod 'GPUImage'
 pod 'PureLayout'
+
+#target 'TextScanner', :exclusive => true do
+#  pod "TextScanner", :path => "./"
+#end

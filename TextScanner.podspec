@@ -13,8 +13,8 @@ s.summary      = "Real time text scanner"
 
 s.description  = "Quick scan with Tesseract OCR in real time based off of PassportScanner by evermeer"
 
-#s.homepage     = "https://github.com/ashare80/RVTTextScannerView"
-#s.screenshots  = [""]
+s.homepage     = "https://github.com/ashare80/RVTTextScannerView"
+s.screenshots  = [""]
 
 
 # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
