@@ -25,24 +25,6 @@ RVTTextScannerView is using the following components which can be installed usin
 - [GPUImage](https://github.com/BradLarson/GPUImage) An open source iOS framework for GPU-based image and video processing
 - [PureLayout](https://github.com/PureLayout/PureLayout) PureLayout provides a fully capable and developer-friendly interface for Auto Layout
 
-## Using RVTTextScannerView in your own App 
-
-'RVTTextScannerView' is now available through the dependency manager [CocoaPods](http://cocoapods.org). 
-You do have to use cocoapods version 0.36. At this moment this can be installed by executing:
-
-```
-[sudo] gem install cocoapods
-```
-
-If you have installed cocoapods version 0.36 or later, then you can just add RVTTextScannerView to your workspace by making sure the following lines are in your Podfile:
-
-```
-source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0'
-use_frameworks!
-pod "RVTTextScannerView"
-```
-
 ## License
 
 RVTTextScannerView is available under the MIT 3 license. See the LICENSE file for more info.
