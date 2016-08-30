@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C8A582EAD0F438AC09F81A4 /* Pods_TextScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D30ED09583273714D9D518D /* Pods_TextScanner.framework */; };
 		7F132F341B9ED2C5001A542A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F132F331B9ED2C5001A542A /* AppDelegate.swift */; };
 		7F132F3B1B9ED2C5001A542A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F132F3A1B9ED2C5001A542A /* Images.xcassets */; };
 		7F132F4A1B9ED2C5001A542A /* TextScanner Tests in Sources */ = {isa = PBXBuildFile; fileRef = 7F132F491B9ED2C5001A542A /* TextScanner Tests */; };
 		7FDBE3641B9EE777004E7945 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 7FDBE3631B9EE777004E7945 /* tessdata */; };
 		7FDBE36A1B9F0334004E7945 /* TextScanner.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 7FDBE3691B9F0334004E7945 /* TextScanner.podspec */; };
-		9761CA4BF8108044A47E681B /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B541379838EC928F1B3B6C /* Pods.framework */; };
 		C57D42441BDAAEA800B5E1EC /* RVTTextScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57D42431BDAAEA800B5E1EC /* RVTTextScannerView.swift */; };
 		C57D42461BDAAEEF00B5E1EC /* MyScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57D42451BDAAEEF00B5E1EC /* MyScanViewController.swift */; };
 		C57D42481BDAAF0A00B5E1EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C57D42471BDAAF0A00B5E1EC /* Main.storyboard */; };
@@ -31,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D30ED09583273714D9D518D /* Pods_TextScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F132F2E1B9ED2C5001A542A /* TextScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F132F321B9ED2C5001A542A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F132F331B9ED2C5001A542A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,8 +51,8 @@
 		C57D42471BDAAF0A00B5E1EC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C57D42491BDAAF1800B5E1EC /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		C57D424B1BDAAF4600B5E1EC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FE570650D384FD6CE1E10A69 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		FFBF09A51ED7577F0EF9B025 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F3776A681F2B6E61A138F613 /* Pods-TextScanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextScanner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextScanner/Pods-TextScanner.debug.xcconfig"; sourceTree = "<group>"; };
+		F82BAD718B6D7384F8BC0E7E /* Pods-TextScanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextScanner.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextScanner/Pods-TextScanner.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9761CA4BF8108044A47E681B /* Pods.framework in Frameworks */,
+				6C8A582EAD0F438AC09F81A4 /* Pods_TextScanner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,8 +86,8 @@
 				7F132F301B9ED2C5001A542A /* TextScanner */,
 				7F132F461B9ED2C5001A542A /* PassportScannerTests */,
 				7F132F2F1B9ED2C5001A542A /* Products */,
-				9C32A16DC6E9DE7A5C59D23F /* Pods */,
 				D5647A18A08F2CD403177038 /* Frameworks */,
+				C50AF6B3196AB62C7EB08B24 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,11 +148,11 @@
 			path = Pod;
 			sourceTree = "<group>";
 		};
-		9C32A16DC6E9DE7A5C59D23F /* Pods */ = {
+		C50AF6B3196AB62C7EB08B24 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FE570650D384FD6CE1E10A69 /* Pods.debug.xcconfig */,
-				FFBF09A51ED7577F0EF9B025 /* Pods.release.xcconfig */,
+				F3776A681F2B6E61A138F613 /* Pods-TextScanner.debug.xcconfig */,
+				F82BAD718B6D7384F8BC0E7E /* Pods-TextScanner.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -160,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				B1B541379838EC928F1B3B6C /* Pods.framework */,
+				2D30ED09583273714D9D518D /* Pods_TextScanner.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -171,12 +173,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F132F4D1B9ED2C5001A542A /* Build configuration list for PBXNativeTarget "TextScanner" */;
 			buildPhases = (
-				F94B4ACF095F96C9FC42B543 /* Check Pods Manifest.lock */,
+				044F55F004C59C3390582728 /* [CP] Check Pods Manifest.lock */,
 				7F132F2A1B9ED2C5001A542A /* Sources */,
 				7F132F2B1B9ED2C5001A542A /* Frameworks */,
 				7F132F2C1B9ED2C5001A542A /* Resources */,
-				A8E5507EC9EAE16CC72FF6A8 /* Copy Pods Resources */,
-				B808D79D000CF372BCD21A19 /* Embed Pods Frameworks */,
+				ECA7F55B9EDD8E264A16438A /* [CP] Embed Pods Frameworks */,
+				EE974EF2A4B606F72F6FFCEB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -212,14 +214,18 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = evict;
 				TargetAttributes = {
 					7F132F2D1B9ED2C5001A542A = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = CN9R9T78MV;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 					};
 					7F132F421B9ED2C5001A542A = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = CN9R9T78MV;
 						TestTargetID = 7F132F2D1B9ED2C5001A542A;
 					};
 				};
@@ -266,49 +272,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A8E5507EC9EAE16CC72FF6A8 /* Copy Pods Resources */ = {
+		044F55F004C59C3390582728 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B808D79D000CF372BCD21A19 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F94B4ACF095F96C9FC42B543 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ECA7F55B9EDD8E264A16438A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextScanner/Pods-TextScanner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE974EF2A4B606F72F6FFCEB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextScanner/Pods-TextScanner-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -357,8 +363,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -403,8 +411,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -423,6 +433,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -430,10 +441,12 @@
 		};
 		7F132F4E1B9ED2C5001A542A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE570650D384FD6CE1E10A69 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = F3776A681F2B6E61A138F613 /* Pods-TextScanner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = CN9R9T78MV;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TextScanner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -442,19 +455,35 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/TesseractOCRiOS/TesseractOCR/lib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ravti.PassportScanner;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"/usr/lib/libstdc++.6.0.9.dylib",
+					"-l\"stdc++\"",
+					"-framework",
+					"\"GPUImage\"",
+					"-framework",
+					"\"PureLayout\"",
+					"-framework",
+					"\"TesseractOCR\"",
+					"-lstdc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashare.TextScanner;
 				PRODUCT_NAME = TextScanner;
 				SWIFT_OBJC_BRIDGING_HEADER = "TextScanner/TextScanner-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
 		7F132F4F1B9ED2C5001A542A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FFBF09A51ED7577F0EF9B025 /* Pods.release.xcconfig */;
+			baseConfigurationReference = F82BAD718B6D7384F8BC0E7E /* Pods-TextScanner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = CN9R9T78MV;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TextScanner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -463,9 +492,23 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/TesseractOCRiOS/TesseractOCR/lib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ravti.PassportScanner;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"/usr/lib/libstdc++.6.0.9.dylib",
+					"-l\"stdc++\"",
+					"-framework",
+					"\"GPUImage\"",
+					"-framework",
+					"\"PureLayout\"",
+					"-framework",
+					"\"TesseractOCR\"",
+					"-lstdc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashare.TextScanner;
 				PRODUCT_NAME = TextScanner;
 				SWIFT_OBJC_BRIDGING_HEADER = "TextScanner/TextScanner-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -473,6 +516,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = CN9R9T78MV;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -493,6 +537,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = CN9R9T78MV;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

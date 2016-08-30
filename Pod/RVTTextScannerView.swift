@@ -36,10 +36,10 @@ extension RVTTextScannerViewDelegate {
 
 public class RVTTextScannerView: UIView, G8TesseractDelegate {
     
-    public class func scanImage(var image: UIImage) -> RVTTextResult? {
+    public class func scanImage(image: UIImage) -> RVTTextResult? {
         
         let tesseract:G8Tesseract = G8Tesseract(language: "eng")
-        image = image.g8_blackAndWhite()
+        let image = image.g8_blackAndWhite()
         tesseract.image = image
         tesseract.recognize()
         let result = tesseract.recognizedText
@@ -159,7 +159,7 @@ public class RVTTextScannerView: UIView, G8TesseractDelegate {
         
         self.timer?.invalidate()
         self.timer = nil;
-        self.timer = NSTimer.scheduledTimerWithTimeInterval(0.05, target: self, selector: Selector("scan"), userInfo: nil, repeats: false)
+        self.timer = NSTimer.scheduledTimerWithTimeInterval(0.05, target: self, selector: #selector(RVTTextScannerView.scan), userInfo: nil, repeats: false)
     }
     
     /**
@@ -223,7 +223,7 @@ public class RVTTextScannerView: UIView, G8TesseractDelegate {
                 cropRect.size.height *= ratio;
                 
                 
-                let imageRef:CGImageRef! = CGImageCreateWithImageInRect(snapshot.CGImage, cropRect);
+                let imageRef:CGImageRef! = CGImageCreateWithImageInRect(snapshot.CGImage!, cropRect);
                 image =   UIImage(CGImage: imageRef)
                 
                 if weakSelf.allowsHorizontalScanning {
@@ -308,7 +308,7 @@ public class RVTTextScannerView: UIView, G8TesseractDelegate {
         }
         
         if let pasttextResult = self.foundTextResults[textResult.key] {
-            pasttextResult.matched++
+            pasttextResult.matched += 1
             
             if pasttextResult.matched >= self.matchThreshold {
                 self.foundTextResults = [:]
@@ -490,7 +490,7 @@ public class RVTScanCropView: UIView {
             case .Right, .RightMargin, .Trailing, .TrailingMargin:
                 self.rightConstraint = layoutConstraint
                 break
-            case .BottomMargin, .Bottom, .Baseline, .FirstBaseline:
+            case .BottomMargin, .Bottom, .LastBaseline, .FirstBaseline:
                 self.bottomConstraint = layoutConstraint
                 break
             default:
@@ -537,7 +537,7 @@ public class RVTScanCropView: UIView {
         rightView.autoPinEdge(.Top, toEdge: .Bottom, ofView: topView)
         rightView.autoPinEdge(.Bottom, toEdge: .Top, ofView: bottomView)
         
-        let panGesture = UIPanGestureRecognizer(target: self, action: "didPan:")
+        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(RVTScanCropView.didPan(_:)))
         self.addGestureRecognizer(panGesture)
         
         self.addCorners()
@@ -911,7 +911,7 @@ extension UIImage {
         
         let imgRef = self.CGImage;
         // the below values are regardless of orientation : for UIImages from Camera, width>height (landscape)
-        let  originalSize = CGSizeMake(CGFloat(CGImageGetWidth(imgRef)), CGFloat(CGImageGetHeight(imgRef))); // not equivalent to self.size (which is dependant on the imageOrientation)!
+        let  originalSize = CGSizeMake(CGFloat(CGImageGetWidth(imgRef!)), CGFloat(CGImageGetHeight(imgRef!))); // not equivalent to self.size (which is dependant on the imageOrientation)!
         
         var boundingSize = newSize
         
@@ -1016,20 +1016,20 @@ extension UIImage {
         let context = UIGraphicsGetCurrentContext();
         
         if (imageOrientation == . Right || imageOrientation == . Left) {
-            CGContextScaleCTM(context, -scaleRatioWidth, scaleRatioHeight);
-            CGContextTranslateCTM(context, -originalSize.height, 0);
+            CGContextScaleCTM(context!, -scaleRatioWidth, scaleRatioHeight);
+            CGContextTranslateCTM(context!, -originalSize.height, 0);
         } else {
-            CGContextScaleCTM(context, scaleRatioWidth, -scaleRatioHeight);
-            CGContextTranslateCTM(context, 0, -originalSize.height);
+            CGContextScaleCTM(context!, scaleRatioWidth, -scaleRatioHeight);
+            CGContextTranslateCTM(context!, 0, -originalSize.height);
         }
         
-        CGContextConcatCTM(context, transform);
+        CGContextConcatCTM(context!, transform);
         
         // we use originalSize (and not newSize) as the size to specify is in user space (and we use the CTM to apply a scaleRatio)
-        CGContextDrawImage(UIGraphicsGetCurrentContext(), CGRectMake(0, 0, originalSize.width, originalSize.height), imgRef);
+        CGContextDrawImage(UIGraphicsGetCurrentContext()!, CGRectMake(0, 0, originalSize.width, originalSize.height), imgRef!);
         let resizedImage = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
         
-        return resizedImage;
+        return resizedImage!;
     }
 }
